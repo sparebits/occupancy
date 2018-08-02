@@ -10,6 +10,14 @@ package com.faac.occupancy.model;
 public class Response {
     
     private ResponseType responseType;
+    
+    public Response() {
+        this.responseType = ResponseType.ok;
+    }
+    
+    public Response(ResponseType type) {
+        this.responseType = type;
+    }
 
     public ResponseType getResponseType() {
         return responseType;

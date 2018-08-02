@@ -16,7 +16,7 @@ public class OccupancyService {
     @RequestMapping("/occupancy")
     public Response pushOccupancy(Occupancy occupancy) {
         logger.info("pushing occupancy...");
-        return null;
+        return new Response();
     }
 
 }
