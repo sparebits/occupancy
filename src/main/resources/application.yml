@@ -1,2 +1,11 @@
 server:
   port: 4000
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/occupancy
+    driver-class-name: org.postgresql.Driver
+    test-on-borrow: true
+    validation-query: SELECT 1 FROM DUAL
+    validation-interval: 0
+    
