@@ -17,6 +17,7 @@ public class Occupancy {
     private String parkingId;
     private int totalPlaces;
     private int freeSpaces;
+    private String companyName;
 
     public Occupancy() {
     }
@@ -49,6 +50,14 @@ public class Occupancy {
 
     public void setFreeSpaces(int freeSpaces) {
         this.freeSpaces = freeSpaces;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
 }
