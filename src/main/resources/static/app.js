@@ -41,6 +41,14 @@ function showGreeting(occupancy) {
 }
 
 $(function () {
+    $.get("companies", function( data ) {
+        for (var i=0; i< data.item.length; i++) {
+            $("#companies").append("<div class='col-md-12' ><h3>" + data.item[i].name + "</h3>");
+            $.get("occupancies?companyId=" + data.item[i].id, function(data) {});
+        }
+    });
+    
+    
     $("form").on('submit', function (e) {
         e.preventDefault();
     });

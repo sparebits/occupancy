@@ -17,7 +17,8 @@ public class Occupancy {
     private String parkingId;
     private int totalPlaces;
     private int freeSpaces;
-    private String companyName;
+    
+    private long companyId;
 
     public Occupancy() {
     }
@@ -26,6 +27,13 @@ public class Occupancy {
         this.parkingId = parkingId;
         this.totalPlaces = totalPlaces;
         this.freeSpaces = freeSpaces;
+    }
+
+    public Occupancy(String parkingId, int totalPlaces, int freeSpaces, long companyId) {
+        this.parkingId = parkingId;
+        this.totalPlaces = totalPlaces;
+        this.freeSpaces = freeSpaces;
+        this.companyId = companyId;
     }
 
     public String getParkingId() {
@@ -52,12 +60,12 @@ public class Occupancy {
         this.freeSpaces = freeSpaces;
     }
 
-    public String getCompanyName() {
-        return companyName;
+    public long getCompanyId() {
+        return companyId;
     }
 
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setCompanyId(long companyId) {
+        this.companyId = companyId;
     }
 
 }
